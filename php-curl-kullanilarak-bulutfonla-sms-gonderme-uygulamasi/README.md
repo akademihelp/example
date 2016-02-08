@@ -1,6 +1,6 @@
-# Php, Curl ile Bulutfon API'sini kullanarak dahili listesini göstermek
+# Php, Curl kullanılarak Bulutfon'la SMS gönderme uygulaması
 
 ## 
 Yazar: Hüseyin TUNÇ
 
-http://akademi.help/php-curl-ile-bulutfon-apisini-kullanarak-dahili-listesini-gostermek
+http://akademi.help/electron-ve-bulutfon-api-dokumantasyonu 
