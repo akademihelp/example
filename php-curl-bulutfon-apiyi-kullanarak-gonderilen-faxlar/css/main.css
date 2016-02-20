@@ -1,0 +1,215 @@
+body,html {
+    background: #e6e2e1;
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* Sütun Başlıkları */
+#title div {
+    display: inline-block;
+    width: 160px;
+    margin:0;
+    padding:0;
+    text-indent: 25px;
+    overflow: hidden;
+    font-size:12px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+#title div:nth-child(2) {
+    width: 50px;
+}
+#title div:last-child {
+    width: 80px;
+    text-align: center;
+}
+/* Sütun Başlıkları Bitiş */
+
+/* Ana Kapsayıcı */
+#container {
+    width: 490px;
+    min-height: 200px;
+    margin:30px auto;
+}
+#container input[type="text"] {
+    background: #f1ecec;
+    height: 45px;
+    line-height: 45px;
+    border:1px solid #b4a9a5;
+    color:#a79b97;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom:30px;
+    outline: none;
+    text-indent: 15px;
+    font-size:15px;
+}
+#container ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    width: 100%;
+    background: #f5f2f0;
+    -webkit-box-shadow: 0px 0px 31px -4px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 0px 31px -4px rgba(0,0,0,0.09);
+    box-shadow: 0px 0px 31px -4px rgba(0,0,0,0.09);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+#container ul li {
+    padding:0px 25px;
+    border-bottom:1px solid #ded8d7;
+    color:#bfb6b2;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size:13px;
+    letter-spacing: 0.05em;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#container ul li:hover {
+    color:#fff;
+    background: #e48562;
+}
+#container ul li:hover a, #container ul li:hover a:visited {
+    color:#fff;
+}
+#container ul li div {
+    display: inline-block;
+    width: 160px;
+    margin:0;
+    padding:0;
+    height: 55px;
+
+    line-height: 55px;
+    overflow: hidden;
+}
+#container ul li div:nth-child(2) {
+    width: 50px;
+}
+#container ul li div:last-child {
+    width: 60px;
+    text-align: center;
+}
+/* Ana Kapsayıcı Bitiş */
+
+
+/* İndir Butonu */
+.button {
+    position: relative;
+    width: 55px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    color:#bfb6b2;
+}
+.button:before {
+    position: absolute;
+    content: '\e000';
+    width: 100%;
+    font-family: 'Flaticon', sans-serif;
+    height: 100%;
+    left: 0;
+    top:0;
+    text-align: center;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.button:after {
+    content: 'DETAY';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:-100%;
+    position: absolute;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#container ul li:hover .button:after {
+    top:0;
+}
+#container ul li:hover .button:before {
+    top:100%;
+}
+/* Buton Bitiş */
+/* ------------------------------------------------------ */
+/* Detay Sayfası */
+#detail{
+    width: 400px;
+    background: #fff;
+    margin:30px auto;
+    padding:30px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#detail h3 {
+    text-align: center;
+    color:#f35533;
+    font-size:14px;
+}
+#detail small {
+    text-align: center;
+    color:#b0a7a5;
+    font-size:12px;
+    display: block;
+}
+#detail div {
+    margin:40px 40px 0 40px;
+}
+#detail div span {
+    float: right;
+}
+#detail ul {
+    list-style:none;
+    margin:0 40px;
+    padding:0;
+}
+#detail ul li {
+    border-bottom:1px dashed #eee;
+    height: 40px;
+    line-height: 40px;
+    color:#6b392e;
+    font-size:14px;
+}
+#detail ul li span {
+    float: right;
+}
+#detail ul li .sent {
+    background: #8ec347;
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:3px 15px;
+    font-size:10px;
+    height: 15px;
+    line-height: 15px;
+    color:#fff;
+    margin-top:10px;
+}
+#detail ul li .error {
+    background: #f35533;
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:3px 15px;
+    font-size:10px;
+    height: 15px;
+    line-height: 15px;
+    color:#fff;
+    margin-top:10px;
+}
